@@ -1,0 +1,31 @@
+# Global ignores for all React Native projects
+node_modules/
+.expo/
+.expo-shared/
+.expo/
+.metro-cache/
+.android/
+build/
+dist/
+
+# Android
+**/android/app/build/
+**/android/.gradle/
+**/android/local.properties
+
+# iOS
+**/ios/build/
+**/ios/Pods/
+
+# OS + Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Environment secrets
+.env
+.env.*
