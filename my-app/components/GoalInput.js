@@ -12,10 +12,10 @@ import { useState } from "react";
 function GoalInput(props) {
   const [enteredGoalText, setEnteredGoalText] = useState("");
 
-  function goalInputhandeler(enteredText) {
+  function goalInputhandler(enteredText) {
     setEnteredGoalText(enteredText);
   }
-  function onAddGoalHandeler() {
+  function onAddGoalHandler() {
     if (enteredGoalText.trim().length == 0) {
       Alert.alert("Empty Goal", "You cannot submit an empty goal!");
       return;
@@ -35,12 +35,12 @@ function GoalInput(props) {
         <TextInput
           style={styles.textInput}
           placeholder="Your Course Goal!"
-          onChangeText={goalInputhandeler}
+          onChangeText={goalInputhandler}
           value={enteredGoalText}
         />
         <View style={styles.buttonContainer}>
           <View style={styles.button}>
-            <Button title="Add Goal" onPress={onAddGoalHandeler} />
+            <Button title="Add Goal" onPress={onAddGoalHandler} />
           </View>
           <View style={styles.button}>
             <Button
